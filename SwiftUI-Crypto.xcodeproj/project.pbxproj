@@ -11,6 +11,7 @@
 		233DF6D32CC4AB8700FAE8B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DF6D22CC4AB8700FAE8B1 /* ContentView.swift */; };
 		233DF6D52CC4AB8800FAE8B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233DF6D42CC4AB8800FAE8B1 /* Assets.xcassets */; };
 		233DF6D82CC4AB8800FAE8B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233DF6D72CC4AB8800FAE8B1 /* Preview Assets.xcassets */; };
+		233DF6E02CC4AD5400FAE8B1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DF6DF2CC4AD5400FAE8B1 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		233DF6D22CC4AB8700FAE8B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		233DF6D42CC4AB8800FAE8B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		233DF6D72CC4AB8800FAE8B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		233DF6DF2CC4AD5400FAE8B1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		233DF6CF2CC4AB8700FAE8B1 /* SwiftUI-Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				233DF6DE2CC4AD3D00FAE8B1 /* Extensions */,
 				233DF6D02CC4AB8700FAE8B1 /* SwiftUI_CryptoApp.swift */,
 				233DF6D22CC4AB8700FAE8B1 /* ContentView.swift */,
 				233DF6D42CC4AB8800FAE8B1 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				233DF6D72CC4AB8800FAE8B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		233DF6DE2CC4AD3D00FAE8B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				233DF6DF2CC4AD5400FAE8B1 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				233DF6D32CC4AB8700FAE8B1 /* ContentView.swift in Sources */,
 				233DF6D12CC4AB8700FAE8B1 /* SwiftUI_CryptoApp.swift in Sources */,
+				233DF6E02CC4AD5400FAE8B1 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
