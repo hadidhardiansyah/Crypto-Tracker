@@ -20,6 +20,7 @@
 		233DF6EC2CC4B71000FAE8B1 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DF6EB2CC4B71000FAE8B1 /* CircleButtonAnimationView.swift */; };
 		233DF6EF2CC4D3F800FAE8B1 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233DF6EE2CC4D3F700FAE8B1 /* CoinModel.swift */; };
 		236B6BF32CC5BE0F00B30718 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B6BF22CC5BE0F00B30718 /* HomeViewModel.swift */; };
+		236B6BF62CC5C3CC00B30718 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B6BF52CC5C3CC00B30718 /* CoinDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		233DF6EB2CC4B71000FAE8B1 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		233DF6EE2CC4D3F700FAE8B1 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		236B6BF22CC5BE0F00B30718 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		236B6BF52CC5C3CC00B30718 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		2377E1612CC7F181003A8570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +72,10 @@
 		233DF6CF2CC4AB8700FAE8B1 /* SwiftUI-Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				233DF6ED2CC4D3D800FAE8B1 /* Models */,
+				2377E1612CC7F181003A8570 /* Info.plist */,
 				233DF6DE2CC4AD3D00FAE8B1 /* Extensions */,
+				236B6BF42CC5C3A200B30718 /* Services */,
+				233DF6ED2CC4D3D800FAE8B1 /* Models */,
 				233DF6E12CC4AFE600FAE8B1 /* Core */,
 				233DF6D02CC4AB8700FAE8B1 /* SwiftUI_CryptoApp.swift */,
 				233DF6D22CC4AB8700FAE8B1 /* ContentView.swift */,
@@ -158,6 +163,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		236B6BF42CC5C3A200B30718 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				236B6BF52CC5C3CC00B30718 /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236B6BF62CC5C3CC00B30718 /* CoinDataService.swift in Sources */,
 				2332BBF42CC4E29B008E163A /* CoinRowView.swift in Sources */,
 				236B6BF32CC5BE0F00B30718 /* HomeViewModel.swift in Sources */,
 				233DF6D32CC4AB8700FAE8B1 /* ContentView.swift in Sources */,
@@ -362,6 +376,7 @@
 		233DF6DC2CC4AB8800FAE8B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = "CG-Ztb47WKRTFGWgeSC3nNmYh1f";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,6 +385,7 @@
 				DEVELOPMENT_TEAM = 67RTDX96NH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Crypto/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,6 +407,7 @@
 		233DF6DD2CC4AB8800FAE8B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = "CG-Ztb47WKRTFGWgeSC3nNmYh1f";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -399,6 +416,7 @@
 				DEVELOPMENT_TEAM = 67RTDX96NH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Crypto/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
